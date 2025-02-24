@@ -2,10 +2,10 @@ import { useContext } from "react";
 
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 
-import { CartContext } from "../contexts/page";
+import { CartContext } from "../contexts/cart";
 
 
-const CardSheet = () => {
+const CartSheet = () => {
     const {isOpen, toogleCart, products} = useContext(CartContext)
     return ( 
         <Sheet open={isOpen} onOpenChange={toogleCart}>
@@ -30,4 +30,4 @@ const CardSheet = () => {
      );
 }
  
-export default CardSheet;
+export default CartSheet;

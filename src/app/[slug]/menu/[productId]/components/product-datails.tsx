@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { formatCurrency } from "@/helpers/format-currency";
 
-import CardSheet from "../../components/card-sheet";
-import { CartContext } from "../../contexts/page";
+import CardSheet from "../../components/ card-sheet";
+import { CartContext } from "../../contexts/cart";
 
 interface ProductDatailsProps{
     product: Prisma.ProductGetPayload<{
