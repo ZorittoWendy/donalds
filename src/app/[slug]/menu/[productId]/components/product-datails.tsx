@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { formatCurrency } from "@/helpers/format-currency";
 
-import CardSheet from "../../components/ card-sheet";
+import CartSheet from "../../components/cart-sheet";
 import { CartContext } from "../../contexts/cart";
 
 interface ProductDatailsProps{
@@ -112,7 +112,7 @@ const ProductDatails = ({ product }: ProductDatailsProps) => {
            </div>
             <Button className="w-full rounded-full" onClick={handleAddToCart}>Adicionar à sacola</Button>
         </div>
-       <CardSheet/>
+       <CartSheet/>
        </>
      );
 }
