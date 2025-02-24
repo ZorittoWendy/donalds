@@ -6,7 +6,7 @@ import { CartContext } from "../contexts/page";
 
 
 const CardSheet = () => {
-    const {isOpen, toogleCart} = useContext(CartContext)
+    const {isOpen, toogleCart, products} = useContext(CartContext)
     return ( 
         <Sheet open={isOpen} onOpenChange={toogleCart}>
         <SheetContent>
@@ -20,6 +20,11 @@ const CardSheet = () => {
                     </SheetDescription>
                 </SheetTitle>
             </SheetHeader>
+            {products.map(product => (
+                <h1 key={product.id}>
+                    {product.name} = {product.quantity}
+                </h1>
+            ))}
         </SheetContent>
     </Sheet>
      );
